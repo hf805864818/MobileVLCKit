@@ -1,0 +1,45 @@
+# MobileVLCKit
+MobileVLCKit下载依赖包
+
+---
+
+<<<<<<< HEAD
+# MobileVLCKit
+MobileVLCKit下载依赖包
+=======
+# MobileVLCKit (镜像)
+
+MobileVLCKit 3.7.3 官方二进制包镜像，用于 vbox-ios 播放内核（VLC 兼容内核，支持 MKV / HEVC / 10bit / HDR / 多音轨）。
+
+## 版本
+
+| 版本 | 标签 | sha256 |
+| --- | --- | --- |
+| 3.7.3 | `3.7.3` | `0d04059906962ddc9a7bd1ebaa12e1f9ae85eb2466116a97a2f46886dd27a0a9` |
+
+## 下载
+
+- Release 资产（CocoaPods `:http` 直接可用，包内含 `MobileVLCKit.podspec.json`）：
+  `https://github.com/hf805864818/MobileVLCKit/releases/download/3.7.3/MobileVLCKit-3.7.3.tar.xz`
+
+- 仓库内 podspec（也可通过 `:podspec` 方式引用）：
+  `https://raw.githubusercontent.com/hf805864818/MobileVLCKit/main/MobileVLCKit.podspec.json`
+
+## CocoaPods 用法
+
+```ruby
+# 方式一：直接引用 Release 包（推荐，内含 podspec）
+pod 'MobileVLCKit', :http => 'https://github.com/hf805864818/MobileVLCKit/releases/download/3.7.3/MobileVLCKit-3.7.3.tar.xz'
+
+# 方式二：引用仓库内 podspec（source 指向 Release 包）
+pod 'MobileVLCKit', :podspec => 'https://raw.githubusercontent.com/hf805864818/MobileVLCKit/main/MobileVLCKit.podspec.json'
+```
+
+## 来源
+
+- 官方构建产物：`https://download.videolan.org/pub/cocoapods/prod/MobileVLCKit-3.7.3-319ed2c0-79128878.tar.xz`
+- 官方项目：https://code.videolan.org/videolan/VLCKit
+- 许可：LGPL v2.1（见包内 `COPYING.txt`）
+
+> 说明：官方 tar 结构为 `MobileVLCKit-binary/` 子目录且不含 podspec，本镜像已调整为 CocoaPods 可直接消费的结构（xcframework 在根目录 + 注入官方 podspec）。
+>>>>>>> a4c839b (init: MobileVLCKit 3.7.3 镜像仓库（README + podspec）)
